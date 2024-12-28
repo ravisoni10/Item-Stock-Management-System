@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_name",
+ "creation": "2024-12-24 17:00:49.563217",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wo9w",
+  "item_name",
+  "stock_quantity",
+  "default_warehouse",
+  "column_break_pffc",
+  "item_code",
+  "unit_of_measure",
+  "amended_from",
+  "column_break_ayvm",
+  "description",
+  "price_set_section",
+  "default_purchase_rate",
+  "column_break_nard",
+  "default_selling_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wo9w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name ",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Select",
+   "label": "Unit of Measure",
+   "options": "liter\nkg\npieces",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "default_purchase_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Default Purchase Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_selling_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Default Selling Rate",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "stock_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Stock Quantity",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pffc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ayvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "price_set_section",
+   "fieldtype": "Section Break",
+   "label": "Price Set"
+  },
+  {
+   "fieldname": "column_break_nard",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-24 17:25:02.758072",
+ "modified_by": "Administrator",
+ "module": "Jonny App",
+ "name": "Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
