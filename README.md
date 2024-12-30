@@ -1,7 +1,3 @@
 ## Jonny App
 
-this is johny app
-
-#### License
-
-mit
+Inventory Management System
